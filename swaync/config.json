@@ -1,0 +1,38 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "top",
+  "control-center-width": 380,
+  "control-center-margin-top": 5,
+  "control-center-margin-bottom": 5,
+  "control-center-margin-right": 5,
+  "control-center-margin-left": 5,
+  "notification-window-width": 400,
+  "widgets": [
+    "label",
+    "mpris",
+    "volume",
+    "title",
+    "dnd",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notificações",
+      "clear-all-button": true,
+      "button-text": "Limpar Tudo"
+    },
+    "label": {
+      "max-lines": 1,
+      "text": "Painel de Controlo"
+    },
+    "mpris": {
+      "image-size": 96,
+      "image-radius": 10
+    },
+    "volume": {
+        "label": " ", 
+        "percent": true
+    }
+  }
+}

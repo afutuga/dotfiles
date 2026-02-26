@@ -1,0 +1,85 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
+/* O Painel Principal */
+.control-center {
+    background: alpha(@background, 0.9);
+    border: 2px solid @color9;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    color: @foreground;
+}
+
+/* Widget do Spotify (MPRIS) */
+.widget-mpris {
+    background: alpha(@color0, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.widget-mpris-player {
+    padding: 5px;
+}
+
+
+/* Estilo do Slider de Volume */
+trough {
+    background: alpha(@foreground, 0.1);
+    min-height: 10px;
+    border-radius: 5px;
+}
+
+highlight {
+    background: @color9;
+    border-radius: 5px;
+}
+
+/* Títulos dos Widgets */
+.widget-label > label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+    color: @color9;
+}
+
+
+/* Container Geral do Volume */
+.widget-volume {
+    background: alpha(@color0, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Tenta formatar a label da percentagem */
+.widget-volume label {
+    font-size: 15px;
+    font-weight: bold;
+    color: @color9;
+    margin-bottom: 5px;
+}
+
+/* A barra (trough) */
+.widget-volume scale trough {
+    background: alpha(@foreground, 0.1);
+    border-radius: 10px;
+    min-height: 12px;
+    min-width: 200px;
+}
+
+/* A parte preenchida (highlight) */
+.widget-volume scale highlight {
+    background: @color9;
+    border-radius: 10px;
+}
+
+/* A bola (slider) */
+.widget-volume scale slider {
+    background: @foreground;
+    border: 2px solid @color9;
+    border-radius: 50%;
+    min-width: 15px;
+    min-height: 15px;
+    margin: -5px 0; /* Centraliza na barra */
+}
